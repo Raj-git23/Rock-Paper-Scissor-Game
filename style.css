@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Rubik+Maps&display=swap');
 
 
@@ -91,7 +90,7 @@ body{
     padding: 1em;
     color: rgb(245, 234, 234);
     border-radius: 1rem;
-    font-family: 'Rubik Maps', system-ui;
+    /* font-family: 'Kanit', system-ui; */
     border: 2px solid black;
 }
 
@@ -113,9 +112,6 @@ body{
         height: 150px;
         width: 150px;
     }
-    
-    /* Add more responsive styles for smaller screens */
-    /* Adjust as needed for specific responsiveness */
 }
 
 @media only screen and (min-width: 465px) and (max-width: 768px) {
@@ -143,11 +139,17 @@ body{
     }
 
     #msg{
-        padding: 14px;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .score-board{
+        margin-top: 2rem;
+        font-size: 22px;
     }
 
     .msg-container{
-        margin-top: 3rem;
+        margin-top: 2rem;
         justify-content: center;
     }
 }
@@ -158,7 +160,7 @@ body{
     body {
         height: 100vh; /* Occupy full viewport height */
     }
-    
+
     .name{
         font-size: 15px;
         line-height: 3rem;
@@ -179,21 +181,21 @@ body{
     }
 
     #user-score, #comp-score{
-        font-size: 25px;
+        font-size: 30px;
     }
 
     #msg{
         padding: 10px;
-        font-size: 12px;
-    }
-
-    .score-board{
-        margin-top: 3px;
         font-size: 18px;
     }
 
+    .score-board{
+        margin-top: 2rem;
+        font-size: 25px;
+    }
+
     .msg-container{
-        margin-top: 20px;
+        margin-top: 2rem;
         justify-content: center;
     }
 }
@@ -237,42 +239,3 @@ body{
         justify-content: center;
     }
 }
-
-
-/* @media (min-width: 465px) and (max-width: 500px){
-    .name{
-        font-size: 16px;
-        line-height: 3rem;
-    }
-
-    .choices{
-        display: flex;
-        margin-top: 3rem;
-        gap: 3px;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .choice img{
-        height: 130px;
-        width: 130px;
-    }
-
-    .score-board {
-        font-size: 12px;
-        margin-top: 3rem;
-    }
-
-    #user-score, #comp-score{
-        font-size: 50px;
-    }
-
-    #msg{
-        padding: 14px;
-    }
-
-    .msg-container{
-        margin-top: 3rem;
-        justify-content: center;
-    }
-} */

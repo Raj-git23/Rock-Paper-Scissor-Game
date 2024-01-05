@@ -77,3 +77,5 @@ choices.forEach((choice) => {
         }, 300);
     });
 });
+
+alert("Tap the images to play! Keep playing to discover new updates. Some images may experience a delay, so keep playing to ensure smooth performance!");
