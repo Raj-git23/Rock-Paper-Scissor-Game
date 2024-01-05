@@ -74,6 +74,6 @@ choices.forEach((choice) => {
         // Revert the image back after a short delay (for instant visual feedback)
         setTimeout(() => {
             img.setAttribute("src", currentImg); // Revert back to the original image after 500 milliseconds
-        }, 250);
+        }, 300);
     });
 });
