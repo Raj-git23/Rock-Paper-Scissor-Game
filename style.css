@@ -95,7 +95,11 @@ body{
     border: 2px solid black;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+    body {
+        height: 100vh; /* Occupy full viewport height */
+    }
+
     .name {
         margin: 1rem;
         font-size: 20px;
@@ -114,7 +118,11 @@ body{
     /* Adjust as needed for specific responsiveness */
 }
 
-@media (min-width: 465px) and (max-width: 768px) {
+@media only screen and (min-width: 465px) and (max-width: 768px) {
+    body {
+        height: 100vh; /* Occupy full viewport height */
+    }
+
     .name{
         font-size: 20px;
         line-height: 3rem;
@@ -146,7 +154,11 @@ body{
 
 
 
-@media (min-width: 380px) and (max-width: 465px){
+@media only screen and (min-width: 380px) and (max-width: 465px){
+    body {
+        height: 100vh; /* Occupy full viewport height */
+    }
+    
     .name{
         font-size: 15px;
         line-height: 3rem;
@@ -187,7 +199,7 @@ body{
 }
 
 
-@media (min-width: 200px) and (max-width: 380px) {
+@media only screen and (min-width: 200px) and (max-width: 380px) {
     .name{
         font-size: 15px;
         line-height: 3rem;
