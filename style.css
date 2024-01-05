@@ -139,11 +139,17 @@ body{
     }
 
     #msg{
-        padding: 14px;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .score-board{
+        margin-top: 2rem;
+        font-size: 22px;
     }
 
     .msg-container{
-        margin-top: 3rem;
+        margin-top: 2rem;
         justify-content: center;
     }
 }
@@ -175,7 +181,7 @@ body{
     }
 
     #user-score, #comp-score{
-        font-size: 25px;
+        font-size: 30px;
     }
 
     #msg{
@@ -185,7 +191,7 @@ body{
 
     .score-board{
         margin-top: 2rem;
-        font-size: 22px;
+        font-size: 25px;
     }
 
     .msg-container{
