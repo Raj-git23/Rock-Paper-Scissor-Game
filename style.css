@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Rubik+Maps&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Rubik Doodle Shadow', system-ui;
+}
+
+body{
+    background-color: #eaa0ad;
+}
+
+.name{
+    margin: 2rem;
+    margin-top: 2rem;
+    color: white;
+    line-height: 5rem;
+    text-shadow: 0 0 rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+    font-size: 25px;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 3rem;
+}
+
+.choice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.choice:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.choice img{
+    height: 230px;
+    width: 230px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.choice img:hover, #msg:hover{
+    border: none;
+    background-color: #eaa0ad;
+    box-shadow: 0 0 5px whitesmoke, 0 0 10px whitesmoke, 0 0 15px whitesmoke, 0 0 20px whitesmoke, 0 0 35px whitesmoke;
+}
+
+.choice p {
+    margin: 0; /* Remove default margin for the paragraph */
+    margin-top: 10px;
+    font-weight: bold; /* Optional: Make the text bold */
+}
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 2rem;
+    gap: 3rem;
+    color: white;
+}
+
+#user-score, #comp-score{
+    font-size: 60px;
+}
+
+.msg-container{
+    margin-top: 4rem;
+}
+
+#msg{
+    display: inline;
+    background-color: #ea8686;
+    padding: 1em;
+    color: rgb(245, 234, 234);
+    border-radius: 1rem;
+    font-family: 'Rubik Maps', system-ui;
+    border: 2px solid black;
+}
+
+@media (max-width: 768px) {
+    .name {
+        margin: 1rem;
+        font-size: 20px;
+    }
+    
+    .choices {
+        gap: 2rem;
+    }
+    
+    .choice img {
+        height: 150px;
+        width: 150px;
+    }
+    
+    /* Add more responsive styles for smaller screens */
+    /* Adjust as needed for specific responsiveness */
+}
+
+@media (min-width: 465px) and (max-width: 768px) {
+    .name{
+        font-size: 20px;
+        line-height: 3rem;
+    }
+
+    .choices{
+        margin-top: 2rem;
+        gap: 20px;
+    }
+
+    .choice img {
+        height: 130px;
+        width: 130px;
+    }
+
+    #user-score, #comp-score{
+        font-size: 50px;
+    }
+
+    #msg{
+        padding: 14px;
+    }
+
+    .msg-container{
+        margin-top: 3rem;
+        justify-content: center;
+    }
+}
+
+
+
+@media (min-width: 380px) and (max-width: 465px){
+    .name{
+        font-size: 15px;
+        line-height: 3rem;
+    }
+
+    .choices{
+        display: flex;
+        gap: 5px;
+        margin-top: 0rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .choice img {
+        height: 128px;
+        width: 128px;
+        /* line-height: 1rem; */
+    }
+
+    #user-score, #comp-score{
+        font-size: 25px;
+    }
+
+    #msg{
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .score-board{
+        margin-top: 3px;
+        font-size: 18px;
+    }
+
+    .msg-container{
+        margin-top: 20px;
+        justify-content: center;
+    }
+}
+
+
+@media (min-width: 200px) and (max-width: 380px) {
+    .name{
+        font-size: 15px;
+        line-height: 3rem;
+    }
+
+    .choices{
+        display: flex;
+        margin-top: 1rem;
+        gap: 0px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .choice img {
+        height: 120px;
+        width: 120px;
+        line-height: 1rem;
+    }
+
+    #user-score, #comp-score{
+        font-size: 30px;
+    }
+
+    #msg{
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .score-board{
+        margin-top: 5px;
+    }
+
+    .msg-container{
+        margin-top: 2rem;
+        justify-content: center;
+    }
+}
+
+
+/* @media (min-width: 465px) and (max-width: 500px){
+    .name{
+        font-size: 16px;
+        line-height: 3rem;
+    }
+
+    .choices{
+        display: flex;
+        margin-top: 3rem;
+        gap: 3px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .choice img{
+        height: 130px;
+        width: 130px;
+    }
+
+    .score-board {
+        font-size: 12px;
+        margin-top: 3rem;
+    }
+
+    #user-score, #comp-score{
+        font-size: 50px;
+    }
+
+    #msg{
+        padding: 14px;
+    }
+
+    .msg-container{
+        margin-top: 3rem;
+        justify-content: center;
+    }
+} */
