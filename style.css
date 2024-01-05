@@ -239,3 +239,42 @@ body{
         justify-content: center;
     }
 }
+
+
+/* @media (min-width: 465px) and (max-width: 500px){
+    .name{
+        font-size: 16px;
+        line-height: 3rem;
+    }
+
+    .choices{
+        display: flex;
+        margin-top: 3rem;
+        gap: 3px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .choice img{
+        height: 130px;
+        width: 130px;
+    }
+
+    .score-board {
+        font-size: 12px;
+        margin-top: 3rem;
+    }
+
+    #user-score, #comp-score{
+        font-size: 50px;
+    }
+
+    #msg{
+        padding: 14px;
+    }
+
+    .msg-container{
+        margin-top: 3rem;
+        justify-content: center;
+    }
+} */
