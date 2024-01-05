@@ -1,3 +1,5 @@
+alert("Tap the images to play! Keep playing to discover new updates. Some images may experience a delay, so keep playing to ensure smooth performance!");
+
 let userScore = 0;
 let compScore = 0;
 
@@ -78,4 +80,3 @@ choices.forEach((choice) => {
     });
 });
 
-alert("Tap the images to play! Keep playing to discover new updates. Some images may experience a delay, so keep playing to ensure smooth performance!");
